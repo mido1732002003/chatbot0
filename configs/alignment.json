@@ -1,0 +1,19 @@
+{
+  "dpo": {
+    "reference_model_path": "checkpoints/sft/best_model.pt",
+    "preference_data_path": "data/preferences.jsonl",
+    "beta": 0.1,
+    "learning_rate": 1e-6,
+    "weight_decay": 0.01,
+    "max_steps": 100,
+    "batch_size": 1,
+    "gradient_clip": 1.0,
+    "output_dir": "checkpoints/dpo"
+  },
+  "safety": {
+    "enable_filter": true,
+    "keywords_file": "data/safety_keywords.txt",
+    "filter_prompts": true,
+    "filter_responses": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "model_checkpoint": "checkpoints/sft/best_model.pt",
+  "tokenizer_path": "configs/tokenizer.json",
+  "data": {
+    "val_path": "data/val.jsonl",
+    "batch_size": 4,
+    "max_seq_len": 256
+  },
+  "generation": {
+    "test_prompts": [
+      "Hello, how are you?",
+      "What is the meaning of life?",
+      "Can you explain quantum physics?",
+      "Tell me a short story.",
+      "How do I make a sandwich?"
+    ],
+    "max_tokens": 100,
+    "temperature": 0.8,
+    "top_k": 50,
+    "top_p": 0.9,
+    "num_samples": 1
+  },
+  "output_path": "evaluation_results.json"
+}

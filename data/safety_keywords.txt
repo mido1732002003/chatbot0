@@ -1,0 +1,10 @@
+# Additional safety keywords
+# Format: category:keyword_or_pattern
+hate_speech:racist
+hate_speech:sexist
+hate_speech:homophobic
+violence:weapon
+violence:explosive
+self_harm:cutting
+illegal_activity:piracy
+illegal_activity:fraud
